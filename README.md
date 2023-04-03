@@ -1,6 +1,6 @@
 # Gatekeeper
 
-This project is ... (TODO: describe more verbosely)
+This project is ... WIP (TODO: describe more verbosely)
 
 ### Prerequisites
 
