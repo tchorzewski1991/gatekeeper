@@ -1,0 +1,18 @@
+syntax = "proto3";
+package gatekeeper;
+
+option go_package = "github.com/tchorzewski1991/gatekeeper/pkg/gk";
+
+service Api {
+  rpc Authenticate (AuthRequest) returns (AuthResponse) {}
+}
+
+message AuthRequest {
+  string client_id = 1;
+  string client_secret = 2;
+}
+
+message AuthResponse {
+  string token = 1;
+  int64 expires_in = 2;
+}
